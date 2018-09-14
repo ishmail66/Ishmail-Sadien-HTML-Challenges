@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation Challenge</title>
+  </head>
+  <body>
+      <!-- Header of Page -->
+      <h1 align="center">Registration Form</h1>
+
+      <form class="" action="index.html" method="post">
+
+        <!-- Inserting the table -->
+        <table align="center">
+
+          <tr>
+            <td>
+               User ID:
+            </td>
+            <td>
+              <input type="text" name="userid" placeholder="Required and must be length of 5 to 12" required minlength="5" maxlength="12" size="35" >
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Password:
+            </td>
+            <td>
+              <input type="password" name="password" placeholder="Required and must be length of 7 to 12" required minlength="7" maxlength="12" size="35" >
+             </td>
+          </tr>
+
+          <tr>
+            <td>
+               Name:
+            </td>
+            <td>
+              <input type="text" name="name" placeholder="Required and alphabates only" pattern="[a-zA-Z]{3,20}" required size="35">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Address:
+             </td>
+            <td>
+              <input type="text" name="address" placeholder="Optional" size="35">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Country:
+            </td>
+            <td>
+              <select name="country" required>
+
+                <option value="" >(please select)</option>
+                <option value="1">South Africa</option>
+                <option value="2">France</option>
+                <option value="3">New Zealand</option>
+                <option value="4">South Korea</option>
+                <option value="5">America</option>
+                <option value="6">Ghana</option>
+                <option value="7">Uganda</option>
+                <option value="8">Russia</option>
+                <option value="9">Croatia</option>
+                <option value="10">Zimbabwe</option>
+
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               ZIP Code:
+            </td>
+            <td>
+              <input type="number" name="number" placeholder="Required. Numeric only" required size="35">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Email:
+            </td>
+            <td>
+              <input type="email" name="email" placeholder="Required. Must be valid email." required size="35">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Sex:
+            </td>
+            <td>
+              <input type="radio" name="value" value="M" required> Male
+              <input type="radio" name="value" value="F" required> Female
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Language:
+            </td>
+            <td>
+              <input type="checkbox" name="lang1" value="english" required> English
+              <input type="checkbox" name="lang1" value="english"> Non English
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              About:
+            </td>
+            <td rowspan="1">
+              <textarea name="message" rows="8" cols="33" placeholder="Optional">
+
+              </textarea>
+            </td>
+          </tr>
+
+        </table>
+
+        <p align="center">
+            <input type="submit" name="Submit" value="Submit" >
+        </p>
+
+
+      </form>
+
+  </body>
+</html>

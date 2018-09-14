@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+
+    <h1>Coffee Shop Information Survey</h1>
+
+    <form class="" action="index.html" method="post">
+
+        First name:<br>
+          <input type="text" name="firstname" placeholder="Name"><br><br>
+
+        Last name:<br>
+          <input type="text" name="lastname" placeholder="Surname"><br><br>
+
+        Password:<br>
+          <input type="password" name="password" placeholder="Password"><br><br>
+
+        Contact Details:<br>
+          <input type="tel" name="cell" placeholder="Cell Number"><br><br>
+
+        Email:<br>
+          <input type="email" name="email" placeholder="Email"><br><br>
+
+        Birthday:<br>
+          <input type="date" name="bday"><br><br>
+
+        Gender:<br>
+          <select name="gender"><br>
+          <option value="0" selected>(please select)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+          </select>
+        <br><br>
+
+        How often do you visit coffee shops?<br>
+          <input type="radio" name="value" value="first"> Once a week<br>
+          <input type="radio" name="value" value="second"> Between 2-6 times a week<br>
+          <input type="radio" name="value" value="third"> Everyday<br>
+          <input type="radio" name="value" value="fourth"> None<br><br>
+
+        What is your favorite coffee shop? Where is it located?<br>
+          Company: <input type="text" name="shopname" placeholder="Shop Name"><br><br>
+          Location: <input type="text" name="location" placeholder="Location"><br><br>
+
+        What do you typically order to drink?<br>
+        <select name="drink"><br>
+          <option value="0" selected>(please select)</option>
+          <option value="1">Tea</option>
+          <option value="2">Coffee</option>
+          <option value="3">Expresso</option>
+          <option value="4">Cappachino</option>
+          <option value="5">Chai latte</option>
+          <option value="6">Hot Chocolate</option>
+          <option value="other">Other, please specify:</option>
+        </select> <br><br>
+
+        If other:<input type="text" name="otherchoice" placeholder="Other Drink">
+        <br><br>
+
+        Which snack/snacks do you normally have with your beverage?<br>
+          <input type="checkbox" name="snack1" value="cookie"> Cookie <br>
+          <input type="checkbox" name="snack2" value="muffin"> Muffin <br>
+          <input type="checkbox" name="snack3" value="biscuit"> Biscuit <br>
+          <input type="checkbox" name="snack4" value="sandwich"> Sandwich <br>
+          <input type="checkbox" name="snack5" value="pie"> Pie <br>
+          <input type="checkbox" name="snack6" value="koeksister"> Koeksister <br>
+          <input type="checkbox" name="snack7" value="cake"> Cake <br>
+          <input type="checkbox" name="snack8" value="rusk"> Rusk <br><br>
+
+        Do you prefer large, national chain coffee shops or small, privately owned coffee shops?<br>
+          <input type="radio" name="value" value="large">National Chain Coffee Shops<br>
+          <input type="radio" name="value" value="small">Private Owned Coffee Shops<br><br>
+
+        If you do have any other comments we would greatly appreciated if you put it in the box below:<br>
+        <textarea name="message" rows="10" cols="40">
+
+        </textarea>
+
+
+        <br><br><a href="https://www.google.com/" target="_blank"><button type="button" onclick="Submmited">Send Survey</button></a><br>
+        <br><input type="reset">
+
+    </form>
+
+
+
+  </body>
+</html>
